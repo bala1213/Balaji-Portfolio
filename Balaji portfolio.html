@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Balaji | Digital Marketing & SEO Specialist | Tiruvannamalai</title>
+<meta name="description" content="Digital Marketing Expert, Meta Ads, Google Ads, SEO Specialist & WordPress Developer based in Tiruvannamalai. Rank #1 on Google without sponsored ads." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet" />
+
+<script>
+  // CONFIG BLOCK - Updated for Balaji
+  const SITE = {
+    name:        "Balaji",
+    tagline:     "Digital Growth Specialist",
+    phone:       "91XXXXXXXXXX", // Replace with your actual number
+    email:       "balaji@yourdomain.com", 
+    instagram:   "balaji_creator", 
+    location:    "Tiruvannamalai, Tamil Nadu",
+    year:        new Date().getFullYear(),
+    services: [
+      { icon:"📣", title:"Meta Ads", sub:"Facebook & Instagram", desc:"From zero account creation to scaling — full Meta campaign setup and optimization.", tags:["Lead Gen","Sales","Brand"] },
+      { icon:"🔍", title:"Google Ads", sub:"Search & Display", desc:"Targeted Google campaigns that put your business in front of searching customers.", tags:["Search","Display","Ads"] },
+      { icon:"🌐", title:"WordPress Development", sub:"Websites", desc:"Fast, mobile-optimized, SEO-ready websites built to convert visitors into customers.", tags:["Design","Speed","WP"] },
+      { icon:"🚀", title:"SEO Specialist", sub:"Organic Rankings", desc:"Rank #1 on Google without paying for sponsored spots. Long-term organic authority.", tags:["On-Page","Off-Page","Technical"] },
+      { icon:"📊", title:"Digital Marketing", sub:"Full Strategy", desc:"End-to-end digital strategy — social media, content, and paid ads working together.", tags:["Strategy","Growth"] },
+      { icon:"📍", title:"Local Business Growth", sub:"Tiruvannamalai", desc:"Hyper-local campaigns for Tiruvannamalai businesses — Google Maps ranking.", tags:["Local SEO","Maps"] },
+    ],
+    clients: [
+      {
+        num: "01",
+        title: "Local Business — Zero to Sales",
+        location: "Tiruvannamalai",
+        desc: "Took a brand-new Meta Business account from complete zero to high-growth sales within weeks.",
+        tags: ["Meta Ads","Local Targeting"],
+        stats: [{ val:"0 → 🔥", key:"Starting Point" }, { val:"↑ Sales", key:"Result" }],
+      },
+      {
+        num: "02",
+        title: "Digital Marketing — Full Campaign",
+        location: "Tiruvannamalai District",
+        desc: "Managed page setup, content strategy, and Meta ad campaigns for significant local growth.",
+        tags: ["Content","Analytics"],
+        stats: [{ val:"Full", key:"Management" }, { val:"📈 High", key:"Growth" }],
+      },
+    ],
+    skills: ["Meta Ads","Google Ads","WordPress","ReactJS","SEO","Content Strategy","Analytics","C Programming"],
+  };
+</script>
+
+<style>
+/* CSS Reset & Variables */
+*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+:root {
+  --lime:   #C8FF00;
+  --orange: #FF5C00;
+  --deep:   #080808;
+  --card:   #101010;
+  --muted:  #181818;
+  --border: #1e1e1e;
+  --text:   #F2F2F2;
+  --sub:    #777;
+  --sub2:   #444;
+}
+html { scroll-behavior:smooth; font-size:16px; }
+body { background:var(--deep); color:var(--text); font-family:'DM Sans',sans-serif; line-height:1.6; overflow-x:hidden; }
+a { color:inherit; text-decoration:none; cursor: pointer; }
+
+/* Custom Cursor */
+.cursor { width:10px; height:10px; border-radius:50%; background:var(--lime); position:fixed; pointer-events:none; z-index:9999; transform:translate(-50%,-50%); mix-blend-mode:difference; }
+.cursor-ring { width:36px; height:36px; border-radius:50%; border:1.5px solid rgba(200,255,0,0.4); position:fixed; pointer-events:none; z-index:9998; transform:translate(-50%,-50%); transition: width 0.2s, height 0.2s; }
+
+/* Navigation */
+nav { position:fixed; top:0; width:100%; z-index:200; display:flex; justify-content:space-between; align-items:center; padding:18px 60px; background:rgba(8,8,8,0.8); backdrop-filter:blur(15px); border-bottom:1px solid var(--border); transition: 0.3s; }
+nav.scrolled { padding:12px 60px; }
+.logo { font-family:'Syne',sans-serif; font-weight:800; font-size:1.5rem; }
+.logo span { color:var(--lime); }
+.nav-links { display:flex; gap:30px; align-items:center; }
+.nav-links a { font-size:0.85rem; text-transform:uppercase; color:var(--sub); transition:0.3s; }
+.nav-links a:hover { color:var(--lime); }
+.nav-cta { background:var(--lime); color:#000; font-weight:700; padding:10px 20px; border-radius:8px; }
+
+/* Mobile Menu */
+.hamburger { display:none; flex-direction:column; gap:5px; cursor:pointer; }
+.hamburger span { width:25px; height:2px; background:white; }
+.mobile-menu { position:fixed; inset:0; background:var(--deep); display:none; flex-direction:column; align-items:center; justify-content:center; gap:30px; z-index:300; }
+.mobile-menu.open { display:flex; }
+.mobile-menu a { font-size:2rem; font-family:'Syne'; font-weight:700; }
+
+/* Sections */
+section { padding:100px 60px; }
+.s-tag { color:var(--orange); text-transform:uppercase; letter-spacing:2px; font-size:0.8rem; margin-bottom:10px; display:block; }
+.s-title { font-family:'Syne'; font-size:3rem; font-weight:800; margin-bottom:50px; }
+.accent { color:var(--lime); }
+
+/* Hero */
+#hero { min-height:100vh; display:flex; flex-direction:column; justify-content:center; position:relative; padding:140px 60px; }
+.hero-heading { font-family:'Syne'; font-size:clamp(3rem, 7vw, 6rem); line-height:1; }
+.hero-desc { max-width:600px; color:var(--sub); margin:30px 0; font-size:1.1rem; }
+.btn-primary { background:var(--lime); color:#000; padding:15px 35px; border-radius:10px; font-weight:700; border:none; cursor:pointer; font-family:'Syne'; transition:0.3s; }
+.btn-primary:hover { transform: translateY(-5px); box-shadow: 0 10px 30px rgba(200,255,0,0.3); }
+
+/* Grids */
+.services-grid, .clients-grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap:20px; }
+.svc-card, .client-card { background:var(--card); padding:40px; border:1px solid var(--border); border-radius:20px; transition:0.3s; }
+.svc-card:hover { border-color:var(--lime); transform:translateY(-10px); }
+.skill-pill { background:var(--muted); padding:8px 20px; border-radius:50px; font-size:0.8rem; border:1px solid var(--border); }
+
+/* Footer */
+footer { padding:50px 60px; border-top:1px solid var(--border); display:flex; justify-content:space-between; align-items:center; }
+
+/* Animations */
+.reveal { opacity:0; transform:translateY(30px); transition: 0.8s ease-out; }
+.reveal.in { opacity:1; transform:translateY(0); }
+
+@media (max-width: 768px) {
+    nav { padding: 15px 25px; }
+    .nav-links { display:none; }
+    .hamburger { display:flex; }
+    section { padding: 80px 25px; }
+    #hero { padding: 100px 25px; }
+    footer { flex-direction: column; text-align: center; gap:20px; }
+}
+</style>
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<nav id="nav">
+  <div class="logo" id="navLogo"></div>
+  <div class="nav-links">
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#results">Results</a>
+    <a href="#contact" class="nav-cta">Hire Me</a>
+  </div>
+  <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#services" onclick="closeMenu()">Services</a>
+  <a href="#about" onclick="closeMenu()">About</a>
+  <a href="#results" onclick="closeMenu()">Results</a>
+  <a href="#contact" onclick="closeMenu()" style="color:var(--lime)">Hire Me</a>
+</div>
+
+<section id="hero">
+  <span class="s-tag">Available for Projects</span>
+  <h1 class="hero-heading" id="heroHeading"></h1>
+  <p class="hero-desc" id="heroDesc"></p>
+  <div class="hero-actions">
+    <button class="btn-primary" onclick="location.href='#contact'">Start a Project →</button>
+  </div>
+</section>
+
+<section id="services">
+  <span class="s-tag">Expertise</span>
+  <h2 class="s-title reveal">My Core <span class="accent">Services</span></h2>
+  <div class="services-grid reveal" id="servicesGrid"></div>
+</section>
+
+<section id="about" style="background:var(--muted)">
+  <span class="s-tag">Behind the scenes</span>
+  <h2 class="s-title reveal">Digital <span class="accent">Growth</span> Specialist</h2>
+  <div class="reveal" id="skillsGrid" style="display:flex; flex-wrap:wrap; gap:10px; max-width:700px"></div>
+</section>
+
+<section id="results">
+  <span class="s-tag">Case Studies</span>
+  <h2 class="s-title reveal">Recent <span class="accent">Success</span></h2>
+  <div class="clients-grid reveal" id="clientsGrid"></div>
+</section>
+
+<section id="contact">
+  <h2 class="s-title reveal" style="text-align:center">Let's <span class="accent">Talk</span></h2>
+  <div id="contactCards" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:15px"></div>
+</section>
+
+<footer>
+  <div class="logo" id="footerLogo"></div>
+  <div id="footerCopy"></div>
+</footer>
+
+<script>
+const $ = id => document.getElementById(id);
+
+// Data Population
+$('navLogo').innerHTML = `${SITE.name}<span>.</span>`;
+$('footerLogo').innerHTML = `${SITE.name}<span>.</span>`;
+$('footerCopy').innerText = `© ${SITE.year} | ${SITE.location}`;
+$('heroHeading').innerHTML = `Digital Growth<br><span class="accent">Specialist</span> & SEO`;
+$('heroDesc').innerText = `Helping businesses in Tiruvannamalai and beyond grow through data-driven Meta Ads and high-performance SEO.`;
+
+$('servicesGrid').innerHTML = SITE.services.map(s => `
+  <div class="svc-card">
+    <div style="font-size:2rem; margin-bottom:15px">${s.icon}</div>
+    <div style="color:var(--orange); font-size:0.7rem; font-weight:700">${s.sub}</div>
+    <h3 style="margin:10px 0">${s.title}</h3>
+    <p style="color:var(--sub); font-size:0.9rem">${s.desc}</p>
+  </div>`).join('');
+
+$('skillsGrid').innerHTML = SITE.skills.map(s => `<span class="skill-pill">${s}</span>`).join('');
+
+$('clientsGrid').innerHTML = SITE.clients.map(c => `
+  <div class="client-card">
+    <div style="color:var(--lime); margin-bottom:10px">📍 ${c.location}</div>
+    <h3>${c.title}</h3>
+    <p style="color:var(--sub); margin:15px 0">${c.desc}</p>
+    <div style="display:flex; gap:20px; border-top:1px solid var(--border); padding-top:15px">
+      ${c.stats.map(st => `<div><div style="font-weight:800; color:var(--lime)">${st.val}</div><div style="font-size:0.7rem; color:var(--sub)">${st.key}</div></div>`).join('')}
+    </div>
+  </div>`).join('');
+
+$('contactCards').innerHTML = [
+    { label: 'WhatsApp', val: 'Message Me', href: `https://wa.me+/917010465734/${SITE.phone}` },
+    { label: 'Email', val: SITE.email, href: `mbalajis0236@gmail.com/:${SITE.email}` },
+    { label: 'Instagram', val: `@${SITE.instagram}`, href: `https://www.instagram.com/balalifestyle_01/${SITE.instagram}` }
+].map(c => `
+  <a class="svc-card" href="${c.href}" target="_blank" style="text-align:center; padding:25px">
+    <div style="font-weight:700">${c.label}</div>
+    <div style="color:var(--sub); font-size:0.8rem">${c.val}</div>
+  </a>`).join('');
+
+// Cursor Logic
+const cur = $('cursor'), ring = $('cursorRing');
+let mx=0, my=0, rx=0, ry=0;
+document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; cur.style.left = mx+'px'; cur.style.top = my+'px'; });
+function anim() { rx += (mx-rx)*0.1; ry += (my-ry)*0.1; ring.style.left = rx+'px'; ring.style.top = ry+'px'; requestAnimationFrame(anim); }
+anim();
+
+// Scroll Reveal
+const obs = new IntersectionObserver(ents => {
+  ents.forEach(e => { if(e.isIntersecting) e.target.classList.add('in'); });
+}, { threshold: 0.1 });
+document.querySelectorAll('.reveal').forEach(r => obs.observe(r));
+
+// Mobile Menu
+const menu = $('mobileMenu');
+$('hamburger').onclick = () => menu.classList.add('open');
+function closeMenu() { menu.classList.remove('open'); }
+
+window.onscroll = () => $('nav').classList.toggle('scrolled', window.scrollY > 50);
+</script>
+
+</body>
+</html>
